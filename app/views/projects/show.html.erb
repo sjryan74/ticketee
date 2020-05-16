@@ -12,16 +12,16 @@
 <header>
   <h2>Tickets</h2>
 
-  <ul id="tickets">
-    <%= @project.tickets.each do |ticket| %>
-      <li>
-        #<%= ticket.id %> - 
-        <%= link_to ticket.name, [@project, ticket] %>
-      </li>
-    <% end %>
-  </ul>
-
   <ul class="actions">
     <li><%= link_to "New Ticket", new_project_ticket_path(@project) %></li>
   </ul>
 </header>
+
+<ul id="tickets">
+  <% @project.tickets.each do |ticket| %>
+    <li>
+      #<%= ticket.id %> - <%= link_to ticket.name, project_ticket_path(@project, ticket) %>
+    </li>
+  <% end %>
+</ul>
+
