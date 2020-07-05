@@ -21,4 +21,12 @@
   p:last-of-type {
     margin-bottom: 0;
   }
+  
+  + .comment {
+    @extend .mt-4;
+  }
+}
+
+.state_change {
+  @extend .my-2;
 }
