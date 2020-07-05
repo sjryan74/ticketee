@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .state {
-  @extend .rounded, .px-2, .py-1;
+  @extend .rounded, .px-2, .py-1 !optional;
   display: inline-block;
   font-size: 110%;
   color: white;
