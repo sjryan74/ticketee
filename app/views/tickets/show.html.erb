@@ -13,20 +13,16 @@
     </ul>
   </header>
 
-  <table class="attributes">
-    <tr>
-      <th>Author:</th>
-      <td><%= @ticket.author.email %></td>
-    </tr>
-    <tr>
-      <th>Created:</th>
-      <td><%= time_ago_in_words(@ticket.created_at) %></td>
-    </tr>
+  <dl class="attributes">
+    <dt>Author:</dt>
+    <dd><%= @ticket.author.email %></dd>
+
+    <dt>Created:</dt>
+    <dd><%= time_ago_in_words(@ticket.created_at) %></dd>
+
     <% if @ticket.state.present? %>
-      <tr>
-        <th>State:</th>
-        <td><%= render @ticket.state %></td>
-      </tr>
+      <dt>State:</dt>
+      <dd><%= render @ticket.state %></dd>
     <% end %>
   </table>
 
