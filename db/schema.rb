@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_01_225503) do
+ActiveRecord::Schema.define(version: 2020_07_07_224204) do
 
   create_table "comments", force: :cascade do |t|
     t.text "text"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2020_07_01_225503) do
   create_table "states", force: :cascade do |t|
     t.string "name"
     t.string "color"
+    t.boolean "default", default: false
   end
 
   create_table "tickets", force: :cascade do |t|
