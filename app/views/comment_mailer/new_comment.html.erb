@@ -5,6 +5,9 @@
     <p>
       <%= link_to "#{@project.name} - #{@ticket.name}", ticket_url %>
     </p>
+    <p>
+      <%= "#{@ticket.name} for #{@project.name} has been updated" %>
+    </p>
 
     <p><%= @comment.author.email %> wrote: </p>
 
