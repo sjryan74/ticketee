@@ -1,6 +1,11 @@
 <%= bootstrap_form_with(model: [project, ticket], local:true, label_errors: true) do |form| %>
   <%= form.text_field :name %>
   <%= form.text_field :description %>
+
+  <div class="form-group">
+    <%= label_tag :tag_names, "Tags" %>
+    <%= text_field_tag :tag_names, "", class: "form-control" %>
+  </div>
   
   <%= form.primary %>
 <% end %>

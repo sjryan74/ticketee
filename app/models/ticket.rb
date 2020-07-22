@@ -3,6 +3,7 @@ class Ticket < ApplicationRecord
   belongs_to :author, class_name: "User"
   belongs_to :state, optional: true
   has_many :comments, dependent: :destroy
+  has_and_belongs_to_many :tags, uniq: true
   has_and_belongs_to_many :watchers, -> { distinct },
     join_table: "ticket_watchers",
     class_name: "User"
