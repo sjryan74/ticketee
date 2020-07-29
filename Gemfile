@@ -66,3 +66,5 @@ gem "font-awesome-rails", "= 4.7.0.5"
 gem "bootstrap_form", "= 4.4.0"
 
 gem "premailer-rails", "~> 1.11"
+
+gem "searcher", "~> 6.0"

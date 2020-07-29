@@ -25,6 +25,9 @@ Rails.application.routes.draw do
       member do
         patch :watch
       end
+      collection do
+        get :search
+      end
     end
   end
 
