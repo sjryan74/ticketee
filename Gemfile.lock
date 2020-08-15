@@ -136,6 +136,7 @@ GEM
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+    pg (1.2.3)
     popper_js (1.16.0)
     premailer (1.12.1)
       addressable
@@ -276,6 +277,7 @@ DEPENDENCIES
   font-awesome-rails (= 4.7.0.5)
   jbuilder (~> 2.7)
   listen (~> 3.2)
+  pg
   premailer-rails (~> 1.11)
   puma (~> 4.1)
   rails (~> 6.0.3)
