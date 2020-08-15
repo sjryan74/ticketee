@@ -69,3 +69,5 @@ gem "bootstrap_form", "= 4.4.0"
 gem "premailer-rails", "~> 1.11"
 
 gem "searcher", "~> 6.0"
+
+gem "rails_12factor", group: :production
